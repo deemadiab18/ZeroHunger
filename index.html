@@ -1,0 +1,504 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger Initiative</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f7e4;
+        }
+
+        /* Navigation */
+        .nav-card {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #e3f0d5;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c5f2d;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    background: #c8e0b6;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+             /* Home Section */
+             .home-section {
+    height: 100vh;
+    background: url('backgroundsdg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+        .home-title {
+            text-align: center;
+            color: #0d3610;
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Content Sections */
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+            background-color: #e3f0d5;
+        }
+
+        .image-container {
+            width: 50%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            width: 50%;
+            padding: 4rem;
+            color: #364d3a;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #2c5f2d;
+            margin-bottom: 2rem;
+            border-left: 4px solid #4CAF50;
+            padding-left: 1rem;
+        }
+
+        .reference {
+            margin-top: 2rem;
+            font-style: italic;
+            color: #6b8e72;
+        }
+
+        .reference a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        /* Comment Section */
+        .comment-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem;
+        }
+
+        form {
+            width: 600px;
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 2px solid #d0e2c4;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3d8b40;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+            }
+
+            .image-container, .content {
+                width: 100%;
+                height: auto;
+            }
+
+            .image-container {
+                height: 50vh;
+            }
+
+            .home-title {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-card">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#climate">Climate Smart Agri</a>
+            <a href="#precision">Precision Farming</a>
+            <a href="#farmers">Small Farmers</a>
+            <a href="#technology">Agri Tech</a>
+            <a href="#nutrition">Nutrition Education</a>
+            <a href="#contact">Contact</a>
+            <a href="#survey">Survey Results</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1 class="home-title">Zero Hunger<br>Global Initiative</h1>
+    </section>
+
+    <!-- Climate-smart Agriculture -->
+    <section id="climate" class="section">
+        <div class="image-container">
+            <img src="climate-smart-agriculture.jpg" alt="Climate smart agriculture">
+        </div>
+        <div class="content">
+            <h2>Climate-smart Agriculture</h2>
+            <p>The global agrifood system must deliver on multiple fronts. It must feed the world, adapt to climate change, and drastically reduce its greenhouse gas emissions. In response to these challenges, the concept of Climate-smart Agriculture (CSA) has emerged as a holistic approach to end food security and promote sustainable development while addressing climate change issues.</p>
+            <p>CSA is a set of agricultural practices and technologies which simultaneously boost productivity, enhance resilience and reduce GHG emissions. Although it is built on existing agricultural knowledge, technologies, and sustainability principles, CSA is distinct in several ways. First, it has an explicit focus on addressing climate change in the agrifood system. Second, CSA systematically considers the synergies and tradeoffs that exist between productivity, adaptation, and mitigation. And third, CSA encompasses a range of practices and technologies that are tailored to specific agro-ecological conditions and socio-economic contexts including the adoption of climate-resilient crop varieties, conservation agriculture techniques, agroforestry, precision farming, water management strategies, and improved livestock management.</p>
+            <div class="reference">
+                Reference: <a href="https://www.worldbank.org/en/topic/climate-smart-agriculture">World Bank Climate-smart Agriculture</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precision Agriculture -->
+    <section id="precision" class="section">
+        <div class="image-container">
+            <img src="Precision Agriculture.jpg" alt="Precision agriculture">
+        </div>
+        <div class="content">
+            <h2>Precision Farming</h2>
+            <p>Precision farming uses modern technologies such as satellite imagery or field mapping to improve crop quality and profitability. Moreover, it optimizes the use of traditional resources. Therefore, this agricultural management system contributes to the development of sustainable agriculture, allowing to solve both economic and ecological problems, which are becoming more acute.</p>
+            <h3>Benefits Of Precision Agriculture</h3>
+            <ul>
+                <li>Minimizing the cost of materials and resources, like water, seeds, fuel, etc.</li>
+                <li>Maintaining soil health by reducing the number of pesticides</li>
+                <li>Lowering agriculture's dependence on weather conditions</li>
+                <li>Maximum realization of the genetic potential of the produced crops</li>
+            </ul>
+            <div class="reference">
+                Reference: <a href="https://eos.com/blog/precision-agriculture/">EOS Precision Agriculture</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smallholder Farmers -->
+    <section id="farmers" class="section">
+        <div class="image-container">
+            <img src="Empowering small holder farmers..png" alt="African farmers working in field">
+        </div>
+        <div class="content">
+            <h2>Empowering Smallholder Farmers</h2>
+            <p>There are an estimated 500 million small holder farmers worldwide and 33 million in Africa that play a significant role in supporting the sustainable development goals (SDGs) of zero hunger in our households. Small scale farmers in Africa produce 70% of the continent’s food supply yet account for 90% of the people living in poverty in Sub Saharan Africa.</p>
+            <p>Understanding the challenges and obstacles that small holder farmers have to overcome and the importance of the role they play towards food security world wide is important to everyone. It is not only imperative that more funds are channelled towards ensuring farmers get seeds, inputs and fertilizers at an affordable rate, but it also requires more support from government and the private sector towards empowering farmers to benefit more in the Agri value chain.</p>
+            <div class="reference">
+                Reference: <a href="https://www.agrifrontier.com/case-study/empowering-smallholder-farmers/">AgriFrontier Case Study</a>
+            </div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zero Hunger Initiative</title>
+        <style>
+            /* Previous styles remain the same */
+            .image-container {
+                width: 45%; /* Reduced from 50% */
+                height: 100vh;
+                overflow: hidden;
+                padding: 20px; /* Added padding */
+            }
+            
+            /* Add this new style for tech section */
+            .tech-list {
+                margin: 20px 0;
+                columns: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Previous sections remain the same -->
+    
+        <!-- Agricultural Technology Section -->
+        <section id="technology" class="section">
+            <div class="image-container">
+                <img src="Technology for Food Security.jpg" alt="Farmer using digital tablet in field">
+            </div>
+            <div class="content">
+                <h2>Agricultural Technology</h2>
+                <p>Science, technology, and innovation can play a critical role in producing more food by creating plant varieties with improved traits, as well as optimizing the inputs needed to make agriculture more productive, especially in regions like India and Sub-Saharan Africa, where climate change, pests, and resource limitations exacerbate food insecurity.</p>
+                
+                <div class="tech-list">
+                    <h3>Key Technologies:</h3>
+                    <ul>
+                        <li>IoT (Internet of Things)</li>
+                        <li>Artificial Intelligence (AI)</li>
+                        <li>Big Data Analytics</li>
+                        <li>Blockchain Technology</li>
+                        <li>Precision Farming Tools</li>
+                    </ul>
+                </div>
+    
+                <p>Smart agriculture technologies offer data-driven solutions to boost productivity and resilience. These innovations improve sustainability by optimizing resource use, reducing environmental impact, and enhancing food system security.</p>
+                
+                <h3>Core Strategies:</h3>
+                <ul>
+                    <li>Crop monitoring systems</li>
+                    <li>Livestock and fisheries management</li>
+                    <li>Food waste reduction programs</li>
+                    <li>Digital finance solutions for rural areas</li>
+                </ul>
+            </div>
+        </section>
+    
+        <!-- Nutrition Education Section -->
+        <section id="nutrition" class="section">
+            <div class="image-container">
+                <img src="Nutrition Education.jpg" alt="Children learning about vegetables">
+            </div>
+            <div class="content">
+                <h2>Nutrition Education</h2>
+                <p>Learning about food helps people eat healthy and spend their money better. It helps prevent poor health and hunger. Teaching about good nutrition makes children grow up stronger and healthier. When people learn about food, they understand how important farming is. They support farmers and help grow better and healthier food. Talking more about healthy eating helps the world end hunger.</p>
+                
+                <h3>Implementation Strategies:</h3>
+                <ul>
+                    <li>Public awareness campaigns</li>
+                    <li>School nutrition programs</li>
+                    <li>Community workshops</li>
+                    <li>Farm-to-school initiatives</li>
+                </ul>
+    
+                <p>The SDG 2 is the only SDG that clearly mentions the concept of 'nutrition'. Despite a reduction of nearly 50 million in the number of children under 5 years of age affected by stunting over the last 20 years, another 150 million are still stunted, 50 million children under 5 years are wasted, and 20 million newborn babies are estimated to be of low birthweight. Although in Europe these figures are much lower, in the south-eastern European region the prevalence of stunting among children under 5 years may be up to 10%.</p>
+                <div class="reference">
+                    Reference: <a href="https://academic.oup.com/eurpub/article/30/Supplement_1/i19/5835786">Oxford Academic Paper</a>
+                </div>
+            </div>
+        </section>
+    </body>
+    </html>
+<!-- Add to CSS -->
+<style>
+    /* Survey Section */
+    .survey-section {
+        min-height: 100vh;
+        padding: 4rem;
+        background-color: #e3f0d5;
+    }
+
+    .survey-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .survey-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        aspect-ratio: 2/1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    .survey-question {
+        color: #2c5f2d;
+        font-size: 0.95rem; 
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    .survey-option {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+        font-size: 0.85rem;
+        padding: 0.3rem;
+        background: #f0f7e4;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .survey-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .survey-section {
+            padding: 2rem;
+        }
+    }
+</style>
+
+<!-- Add to HTML before contact section -->
+<section id="survey" class="survey-section">
+    <h2 class="survey-title">Public Opinion Survey Results</h2>
+    <div class="survey-grid">
+        <!-- Question 1 -->
+        <div class="survey-card">
+            <h3 class="survey-question">Would you support buying food from eco-friendly farms?</h3>
+            <div class="survey-option"><span>Yes</span><span>84.9%</span></div>
+            <div class="survey-option"><span>No</span><span>10.8%</span></div>
+            <div class="survey-option"><span>Maybe</span><span>4.3%</span></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="survey-card">
+            <h3 class="survey-question">Does climate change affect food production?</h3>
+            <div class="survey-option"><span>Yes</span><span>92.3%</span></div>
+            <div class="survey-option"><span>No</span><span>7.7%</span></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="survey-card">
+            <h3 class="survey-question">Main benefit of sustainable farming?</h3>
+            <div class="survey-option"><span>Healthy food & environment</span><span>90.2%</span></div>
+            <div class="survey-option"><span>More pollution</span><span>5.4%</span></div>
+            <div class="survey-option"><span>Expensive food</span><span>3.2%</span></div>
+            <div class="survey-option"><span>Less food</span><span>1.2%</span></div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="survey-card">
+            <h3 class="survey-question">How often consider food origin?</h3>
+            <div class="survey-option"><span>Always</span><span>8.6%</span></div>
+            <div class="survey-option"><span>Sometimes</span><span>28%</span></div>
+            <div class="survey-option"><span>Rarely</span><span>38.7%</span></div>
+            <div class="survey-option"><span>Never</span><span>24.7%</span></div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="survey-card">
+            <h3 class="survey-question">Who should support sustainable agriculture?</h3>
+            <div class="survey-option"><span>Small farmers</span><span>68.5%</span></div>
+            <div class="survey-option"><span>Factories</span><span>15.2%</span></div>
+            <div class="survey-option"><span>Big companies</span><span>10.9%</span></div>
+            <div class="survey-option"><span>None</span><span>5.4%</span></div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="survey-card">
+            <h3 class="survey-question">Best way to make farming sustainable?</h3>
+            <div class="survey-option"><span>Natural fertilizers</span><span>88.2%</span></div>
+            <div class="survey-option"><span>Burning crops</span><span>7.5%</span></div>
+            <div class="survey-option"><span>More chemicals</span><span>3.2%</span></div>
+            <div class="survey-option"><span>Cutting forests</span><span>1.1%</span></div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="survey-card">
+            <h3 class="survey-question">Should governments support small farmers?</h3>
+            <div class="survey-option"><span>Yes</span><span>90.2%</span></div>
+            <div class="survey-option"><span>No</span><span>9.8%</span></div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="survey-card">
+            <h3 class="survey-question">Can technology help sustainable farming?</h3>
+            <div class="survey-option"><span>Yes</span><span>79.6%</span></div>
+            <div class="survey-option"><span>No</span><span>17.2%</span></div>
+            <div class="survey-option"><span>Maybe</span><span>3.2%</span></div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="survey-card">
+            <h3 class="survey-question">Main benefit of sustainable farming?</h3>
+            <div class="survey-option"><span>Healthy food & environment</span><span>83.7%</span></div>
+            <div class="survey-option"><span>More pollution</span><span>10.9%</span></div>
+            <div class="survey-option"><span>Expensive food</span><span>4.1%</span></div>
+            <div class="survey-option"><span>Less food</span><span>1.3%</span></div>
+        </div>
+    </div>
+</section>
+    <!-- Comment Section -->
+    <section id="contact" class="comment-section">
+        <form>
+            <h2>Get Involved</h2>
+            <input type="email" placeholder="Your email address" required>
+            <input type="tel" placeholder="Contact number">
+            <textarea placeholder="Your message or question..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
+    </section>
+</body>
+</html>
+</html>
